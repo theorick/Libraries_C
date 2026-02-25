@@ -1,35 +1,71 @@
 # 📦 Centralisateur de Librairies C
 
-Ce projet centralise les **librairies C les plus utiles et populaires** pour le développement général, scientifique, réseau, graphique et traitement de données.  
-L’objectif est de faciliter la configuration d’un environnement C complet.
+Ce projet centralise les **librairies C les plus utiles et populaires** pour le développement général, scientifique, réseau, graphique, cryptographie et traitement de données.  
+L’objectif est de fournir un **référentiel complet** pour installer rapidement un environnement C complet.
 
 ---
 
-## ⚡ Librairies Incluses
+## ⚡ Librairies Incluses (~50)
 
 ### 🔹 Développement général
 - **glib** – Collections, utilitaires et structures de données  
-- **libconfig** – Gestion de fichiers de configuration  
-- **argp** – Parsing d’arguments de la ligne de commande  
+- **libconfig** – Fichiers de configuration  
+- **argp** – Parsing d’arguments  
+- **libuuid** – Gestion des UUID  
+- **libarchive** – Manipulation d’archives (.tar, .zip…)  
+- **zlib** – Compression de données  
+- **bzip2** – Compression avancée  
+- **lz4** – Compression ultra-rapide  
+- **libffi** – Interface de fonctions dynamiques  
+- **libsqlite3** – Base de données embarquée  
 
 ### 🔹 Mathématiques & Scientifique
-- **GSL (GNU Scientific Library)** – Fonctions mathématiques avancées  
-- **GMP / MPFR** – Arithmétique de précision multiple  
+- **GSL (GNU Scientific Library)** – Maths avancées  
+- **GMP** – Entiers de précision arbitraire  
+- **MPFR** – Flottants de précision multiple  
+- **Armadillo (C++)** – Algèbre linéaire (compatible C++)  
+- **BLAS / LAPACK** – Calculs matriciels  
+- **FFTW** – Transformée de Fourier rapide  
+- **OpenBLAS** – BLAS optimisé  
+- **Eigen (C++)** – Algèbre linéaire rapide  
+- **Cephes** – Fonctions mathématiques spéciales  
+- **NLopt** – Optimisation numérique  
 
 ### 🔹 Réseau & Protocoles
-- **libcurl** – Requêtes HTTP et FTP  
+- **libcurl** – HTTP, FTP, etc.  
 - **libwebsockets** – WebSockets  
-- **OpenSSL** – Cryptographie et HTTPS  
+- **OpenSSL** – Cryptographie  
+- **libssh2** – SSH client  
+- **libmqtt** – MQTT protocol  
+- **libxml2** – XML parsing  
+- **libxslt** – Transformation XSLT  
+- **jansson** – JSON parsing  
+- **cJSON** – JSON léger  
+- **protobuf-c** – Protocol Buffers  
 
-### 🔹 Développement graphique / Jeux
-- **SDL2** – Création de jeux et interfaces graphiques  
-- **SFML** – Multimédia et jeux (C++ mais utilisable avec C)  
-- **ncurses** – Interface texte avancée dans le terminal  
+### 🔹 Développement graphique / Multimédia
+- **SDL2** – Jeux et interfaces graphiques  
+- **SDL2_image** – Gestion d’images  
+- **SDL2_mixer** – Audio  
+- **SDL2_ttf** – Textes  
+- **SFML (C++)** – Multimédia  
+- **ncurses** – Terminal avancé  
+- **Allegro 5** – Graphiques et jeux  
+- **OpenGL** – Graphiques 3D  
+- **GLEW** – Gestion extensions OpenGL  
+- **GLFW** – Fenêtres et contextes OpenGL  
 
-### 🔹 JSON / XML / Fichiers
-- **cJSON** – Parsing JSON  
-- **libxml2** – Parsing XML  
-- **protobuf-c** – Protocol Buffers pour C  
+### 🔹 Compression / Fichiers
+- **libzip** – ZIP  
+- **lib7zip** – 7zip  
+- **xz-utils / liblzma** – Compression LZMA  
+- **brotli** – Compression moderne  
+- **zstd** – Compression très rapide  
+- **libpng** – Images PNG  
+- **libjpeg** – Images JPEG  
+- **libtiff** – Images TIFF  
+- **libwebp** – Images WebP  
+- **OpenEXR** – Images HDR  
 
 ---
 
@@ -38,8 +74,11 @@ L’objectif est de faciliter la configuration d’un environnement C complet.
 ### 1️⃣ Linux (Ubuntu/Debian)
 ```bash
 sudo apt update
-sudo apt install build-essential cmake git
-sudo apt install libglib2.0-dev libcurl4-openssl-dev libssl-dev libgsl-dev libsdl2-dev libncurses5-dev libxml2-dev
+sudo apt install build-essential cmake git \
+libglib2.0-dev libcurl4-openssl-dev libssl-dev libgsl-dev \
+libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev \
+libncurses5-dev libxml2-dev libjpeg-dev libpng-dev libtiff-dev zlib1g-dev \
+libffi-dev libsqlite3-dev libbz2-dev liblzma-dev libwebp-dev
 
 ---
 
