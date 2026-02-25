@@ -51,7 +51,7 @@ brew install glib curl openssl gsl sdl2 ncurses libxml2
 3️⃣ Compiler un exemple
 gcc examples/hello.c -o hello -lcurl -lssl -lcrypto -lgsl -lglib-2.0
 ./hello
-
+```
 
 ---
 
